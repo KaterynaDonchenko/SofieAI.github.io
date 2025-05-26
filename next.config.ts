@@ -1,15 +1,17 @@
 import type { NextConfig } from "next";
+import type { RuleSetRule } from 'webpack';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
-        unoptimized: false,
-        contentDispositionType: 'attachment',
-        contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    unoptimized: false,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   webpack(config) {
     // Grab the existing rule that handles SVG imports
-    const fileLoaderRule = config.module.rules.find(rule => rule.test?.test?.('.svg'));
+    const fileLoaderRule = config.module.rules.find(
+      (rule: RuleSetRule) => rule.test instanceof RegExp && rule.test.test('.svg'));
 
     config.module.rules.push(
       // Reapply the existing rule, but only for svg imports ending in ?url
@@ -31,7 +33,7 @@ const nextConfig: NextConfig = {
     fileLoaderRule.exclude = /\.svg$/i;
 
     return config;
-    }
+  }
 };
 
 export default nextConfig;

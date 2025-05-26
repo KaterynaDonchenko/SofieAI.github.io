@@ -6,8 +6,8 @@ export const Policy = () => {
     return (
         <div className={`policy pt-[200px] ${styles.policy}`}>
             <div className="container">
-                <Title title="📃 Privacy Policy" classTitle={'pb-[30px]'}/>
-                <p>This privacy notice for c0x12c Inc. ("<strong>we</strong>""<strong>us</strong>"or"<strong>our</strong>"), "), describes how and why we might collect, store, use, and/or share (" <strong>process</strong> ") your information when you use our services (" <strong>Services</strong>"), such as when you:</p>
+                <Title title="📃 Privacy Policy" classTitle={'pb-[30px]'} />
+                <p>This privacy notice for c0x12c Inc. ("<strong>we</strong>""<strong>us</strong>"or"<strong>our</strong>"), describes how and why we might collect, store, use, and/or share (" <strong>process</strong> ") your information when you use our services (" <strong>Services</strong>"), such as when you:</p>
                 <ul>
                     <li>Download and use our mobile application (Sophie), or any other application of ours that links to this privacy notice</li>
                     <li>Engage with us in other related ways, including any sales, marketing, or events</li>
@@ -152,7 +152,7 @@ export const Policy = () => {
                 <p><strong>Withdrawing your consent:</strong> If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" below or updating your preferences.</p>
                 <p>However, please note that this will not affect the lawfulness of the processing before its withdrawal nor, when applicable law allows, will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.</p>
                 <p><strong>Opting out of marketing and promotional communications:</strong> You can unsubscribe from our marketing and promotional communications at any time by clicking on the unsubscribe link in the emails that we send, or by contacting us using the details provided in the section "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" below. You will then be removed from the marketing lists. However, we may still communicate with you — for example, to send you service-related messages that are necessary for the administration and use of your account, to respond to service requests, or for other non-marketing purposes.</p>
-                <p><strong>Account Information</strong><br/> If you would at any time like to review or change the information in your account or terminate your account, you can:</p>
+                <p><strong>Account Information</strong><br /> If you would at any time like to review or change the information in your account or terminate your account, you can:</p>
                 <p>Log in to your account settings and update your user account.</p>
                 <p>Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.</p>
                 <p>If you have questions or comments about your privacy rights, you may email us at <a>hello.sophie@c0x12c.com</a></p>
